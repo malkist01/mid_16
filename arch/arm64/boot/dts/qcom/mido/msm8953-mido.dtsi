@@ -18,3 +18,4 @@
 #include "msm8953-pinctrl-mido.dtsi"
 #include "msm8953-memory-mido.dtsi"
 #include "mido-gpu-oc.dtsi"
+#include "msm8953-OC-ram.dtsi"
