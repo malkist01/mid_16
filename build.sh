@@ -4,9 +4,10 @@ rm -rf kernel
 git clone $REPO -b $BRANCH kernel
 cd kernel
 
-chmod a+x patch.sh
+chmod a+x Patch.sh
+./Patch.sh
+bash Patch.sh
 
-./patch.sh
 
 # Add KernelSU
 curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/kpm/kernel/setup.sh" | bash -s kpm
