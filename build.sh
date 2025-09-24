@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # Dependencies
 rm -rf kernel
-git clone $REPO -b $BRANCH kernel 
+git clone $REPO -b $BRANCH kernel
 cd kernel
 
-chmod +x patch.sh
+chmod a+x patch.sh
 
-.patch.sh
+./patch.sh
+
 # Add KernelSU
 curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/kpm/kernel/setup.sh" | bash -s kpm
 #add KSU Config
